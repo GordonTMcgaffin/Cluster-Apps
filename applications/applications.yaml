@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/your-username/argocd-bootstrap.git
+    repoURL: https://github.com/GordonTMcgaffin/Cluster-Apps.git
     targetRevision: HEAD
-    path: n8n
+    path: applications/n8n
     directory:
       recurse: true 
   destination:
