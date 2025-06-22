@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: n8n-main
-  namespace: n8n  # or "default" if that's where Argo CD is running
+  namespace: default  # or "default" if that's where Argo CD is running
 spec:
   project: default
   source:
