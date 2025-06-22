@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/GordonTMcgaffin/Cluster-Apps.git
     targetRevision: HEAD
-    path: applications/n8n
+    path: applications/
     directory:
       recurse: true 
   destination:
