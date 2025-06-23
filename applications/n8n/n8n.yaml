@@ -2,21 +2,20 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: n8n-main
-  namespace: n8n  # or "default" if that's where Argo CD is running
+  namespace: argocd
 spec:
   project: default
   source:
-    repoURL: oci://8gears.container-registry.com/library/n8n
-    targetRevision: 1.0.7
+    repoURL: https://k8s-at-home.com/charts/
     chart: n8n
+    targetRevision: 10.1.2
     helm:
       values: |-
-        main:
-          resources:
-            limits:
-              memory: 2048Mi
-            requests:
-              memory: 512Mi
+        resources:
+          limits:
+            memory: 2048Mi
+          requests:
+            memory: 512Mi
   destination:
     server: https://kubernetes.default.svc
     namespace: n8n
