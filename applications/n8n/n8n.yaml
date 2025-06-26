@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://k8s-at-home.com/charts/
+    repoURL: https://github.com/8gears/n8n-helm-chart/tree/main/charts/n8n
     chart: n8n
-    targetRevision: 1.0.0
+    targetRevision: 1.0.11
     helm:
       values: |-
         resources:
