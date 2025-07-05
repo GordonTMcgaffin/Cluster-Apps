@@ -11,6 +11,10 @@ spec:
     targetRevision: 1.0.10
     helm:
       values: |-
+        env:
+          WEBHOOK_URL: "https://pudding.mcmuffin.co.za/n8n/"
+          N8N_EDITOR_BASE_URL: "https://pudding.mcmuffin.co.za/n8n/"
+          N8N_PATH: "/n8n"
         resources:
           limits:
             memory: 2048Mi
